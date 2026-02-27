@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+body { background-color: #f5f6fa; color: #2f3640; line-height: 1.6; padding: 20px; }
+
+header { text-align: center; margin-bottom: 30px; }
+header h1 { font-size: 2.5rem; color: #e84118; }
+header p { margin: 5px 0; color: #718093; }
+
+.card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+.card h2 { margin-bottom: 15px; color: #e84118; }
+ul { list-style-type: disc; margin-left: 20px; }
+
+.accordion-btn {
+  background: #e84118; color: #fff; cursor: pointer; padding: 12px 20px; width: 100%; border: none;
+  text-align: left; outline: none; font-size: 1rem; border-radius: 5px; margin-bottom: 5px; transition: background 0.3s;
+}
+.accordion-btn:hover { background: #c23616; }
+
+.accordion-content { display: none; padding: 10px 20px; background: #f1f2f6; border-radius: 5px; margin-bottom: 10px; }
+
+footer { text-align: center; margin-top: 40px; color: #718093; }
