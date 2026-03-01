@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #f5f6fa;
-  color: #2f3640;
+  background-color: #f6efe9;        /* warm paper background */
+  color: #2b1a12;                   /* dark brown text */
   line-height: 1.6;
   padding: 20px;
 }
@@ -20,25 +20,27 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #e84118;
+  color: #7a3e1d;                   /* primary brown */
 }
 
 header p {
   margin: 5px 0;
-  color: #718093;
+  color: #5a3a2a;                   /* muted brown */
 }
 
 .card {
-  background: #fff;
+  background: #fff7f1;              /* light paper card */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
 .card h2 {
   margin-bottom: 15px;
-  color: #e84118;
+  color: #7a3e1d;                   /* brown heading */
+  border-bottom: 2px solid #e6a36a; /* subtle accent */
+  padding-bottom: 6px;
 }
 
 ul {
@@ -48,8 +50,8 @@ ul {
 
 /* Accordion */
 .accordion-btn {
-  background: #e84118;
-  color: #fff;
+  background: #b45a2a;              /* brown button */
+  color: #ffffff;
   cursor: pointer;
   padding: 12px 20px;
   width: 100%;
@@ -59,23 +61,24 @@ ul {
   font-size: 1rem;
   border-radius: 5px;
   margin-bottom: 5px;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
 .accordion-btn:hover {
-  background: #c23616;
+  background: #8f451f;              /* darker brown hover */
 }
 
 .accordion-content {
   display: none;
   padding: 10px 20px;
-  background: #f1f2f6;
+  background: #f3e6dc;              /* soft beige */
   border-radius: 5px;
   margin-bottom: 10px;
+  color: #2b1a12;
 }
 
 footer {
   text-align: center;
   margin-top: 40px;
-  color: #718093;
+  color: #5a3a2a;
 }
