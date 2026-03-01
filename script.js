@@ -2,47 +2,35 @@ const modal = document.getElementById("modal");
 const modalBody = document.getElementById("modal-body");
 
 function openModal(type) {
-  modal.style.display = "block";
+  modal.style.display = "flex";
 
   const content = {
     etech: `
-      <h2>Etech Global Services</h2>
-      <p><strong>Fraud Prevention Analyst (June 2025 – Present)</strong></p>
+      <h3>Etech Global Services</h3>
       <ul>
-        <li>Transaction monitoring & fraud detection</li>
-        <li>Account takeover and chargeback handling</li>
-        <li>Risk assessment & mitigation strategies</li>
-        <li>Compliance reporting and investigations</li>
-      </ul>
-    `,
-    "systool-intern": `
-      <h2>Systool Pvt. Ltd.</h2>
-      <p><strong>Digital Forensic Examiner Intern</strong></p>
-      <ul>
-        <li>Digital evidence collection & analysis</li>
-        <li>RAM & triage acquisition</li>
-        <li>Incident response assistance</li>
+        <li>Fraud prevention and transaction monitoring</li>
+        <li>Account takeover investigations</li>
+        <li>Risk assessment and reporting</li>
       </ul>
     `,
     systool: `
-      <h2>Systool Pvt. Ltd.</h2>
-      <p><strong>Digital Forensic Examiner</strong></p>
+      <h3>Systool Pvt. Ltd.</h3>
       <ul>
-        <li>OS forensic investigations</li>
-        <li>Case documentation & reporting</li>
+        <li>Digital evidence collection and analysis</li>
+        <li>RAM and triage acquisition</li>
+        <li>Incident response support</li>
       </ul>
     `,
     auro: `
-      <h2>Aurobindo Hospital</h2>
-      <p><strong>Toxicology Intern</strong></p>
+      <h3>Aurobindo Hospital</h3>
       <ul>
-        <li>DNA modeling & toxicology analysis</li>
-        <li>Exposure to autopsy & firearms examination</li>
+        <li>Toxicology and DNA modeling exposure</li>
+        <li>Autopsy and firearms observations</li>
       </ul>
     `
   };
 
-  modalBody.innerHTML = content[type];
+  modalBody.innerHTML = content[type] || "<p>No details available.</p>";
 }
 
 function closeModal() {
