@@ -17,7 +17,7 @@
 /* Page */
 body {
   background: linear-gradient(180deg, #f6efe9 0%, #ece1d8 100%);
-  color: var(--text-dark);
+  color: #000000;   /* FORCE BLACK TEXT */
   padding: 40px;
 }
 
@@ -55,7 +55,7 @@ header p {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #6b3a1e;
+  color: #000000;   /* BLACK HEADINGS */
   margin-bottom: 18px;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 6px;
@@ -80,7 +80,7 @@ li {
   display: block;
   width: 100%;
   background: #f0d5c2;
-  color: #3a1f12;
+  color: #000000;          /* BLACK TEXT */
   border: 1px solid #e0bfa8;
   padding: 14px 16px;
   margin-bottom: 12px;
@@ -111,13 +111,13 @@ li {
 }
 
 .modal-content {
-  background: #2b1a12;
-  color: #f7ede6;
+  background: #fff7f1;   /* LIGHT BACKGROUND */
+  color: #000000;        /* BLACK TEXT */
   max-width: 600px;
   width: 90%;
   padding: 28px;
   border-radius: 14px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
 }
 
 /* Close button */
@@ -125,7 +125,7 @@ li {
   float: right;
   font-size: 26px;
   cursor: pointer;
-  color: #f7ede6;
+  color: #000000;
 }
 
 /* Footer */
