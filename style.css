@@ -54,13 +54,6 @@ header p {
 
 .popup-btn {
   background: linear-gradient(135deg, #00e5ff, #0077ff);
-  border: none;
-  padding: 14px;
-  border-radius: 10px;
-  color: #000;
-  font-weight: 600;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .popup-btn:hover {
