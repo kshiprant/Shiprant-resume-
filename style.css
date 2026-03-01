@@ -1,10 +1,11 @@
 :root {
   --primary: #b45a2a;
-  --paper: #fff7f1;
+  --secondary: #f3e6dc;
   --accent: #e6a36a;
+  --text-dark: #2b1a12;
+  --text-light: #ffffff;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -13,22 +14,27 @@
 }
 
 body {
-  background: linear-gradient(180deg, #f6efe9 0%, #ece1d8 100%);
-  color: #000;
+  background: linear-gradient(
+    180deg,
+    #f6efe9 0%,
+    #ece1d8 100%
+  );
+  color: var(--text-dark);
   padding: 40px;
 }
 
+/* Layout */
 header {
   background: var(--primary);
-  color: #fff;
+  color: var(--text-light);
   padding: 35px;
-  border-radius: 10px;
-  text-align: center;
+  border-radius: 6px;
   margin-bottom: 30px;
 }
 
 header h1 {
   font-size: 2.4rem;
+  letter-spacing: 1px;
 }
 
 header p {
@@ -36,37 +42,86 @@ header p {
   opacity: 0.9;
 }
 
+/* Card */
 .card {
-  background: var(--paper);
+  background: var(--secondary);
   padding: 30px;
-  border-radius: 14px;
+  border-radius: 6px;
   margin-bottom: 25px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
+/* Section title */
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: var(--primary);
+  margin-bottom: 18px;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 6px;
-  margin-bottom: 18px;
 }
 
-.card h3 {
-  margin-top: 18px;
-  margin-bottom: 8px;
-  font-size: 1rem;
+/* Text */
+p {
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
+/* Lists */
 ul {
   padding-left: 18px;
 }
 
 li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
+/* Experience buttons (editorial style) */
+.popup-btn {
+  display: block;
+  width: 100%;
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.popup-btn:hover {
+  background: #9e4d22;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: var(--secondary);
+  max-width: 600px;
+  margin: 8% auto;
+  padding: 30px;
+  border-radius: 6px;
+  color: var(--text-dark);
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* Footer */
 footer {
   text-align: center;
   margin-top: 40px;
