@@ -32,45 +32,35 @@
     </section>
 
     <!-- Experience -->
-    <section class="card">
-      <h2>Professional Experience</h2>
-      <div class="accordion">
-        <button class="accordion-btn">Etech Global Services - Fraud Prevention Analyst (June 2025 - Present)</button>
-        <div class="accordion-content">
-          <ul>
-            <li>Monitor and analyze transactions to detect and prevent fraudulent activity.</li>
-            <li>Investigate suspicious accounts and transactions, identifying potential risks and breaches.</li>
-            <li>Collaborate with internal teams to implement fraud mitigation strategies.</li>
-            <li>Handle account takeovers, chargeback disputes, and customer complaints.</li>
-            <li>Prepare reports for compliance audits and regulatory requirements.</li>
-          </ul>
-        </div>
+<section class="card">
+  <h2>Professional Experience</h2>
 
-        <button class="accordion-btn">Systool Pvt. Ltd. - Digital Forensic Examiner Intern (July 2024 - Dec 2024)</button>
-        <div class="accordion-content">
-          <ul>
-            <li>Collected, extracted, and analyzed digital evidence.</li>
-            <li>Performed RAM and triage acquisitions and Windows forensic investigations.</li>
-            <li>Assisted in incident response and forensic reporting.</li>
-          </ul>
-        </div>
+  <div class="experience-list">
+    <button class="popup-btn" onclick="openModal('etech')">
+      Etech Global Services – Fraud Prevention Analyst
+    </button>
 
-        <button class="accordion-btn">Systool Pvt. Ltd. - Digital Forensic Examiner (Jan 2025)</button>
-        <div class="accordion-content">
-          <ul>
-            <li>Conducted OS forensics and assisted with case investigations.</li>
-          </ul>
-        </div>
+    <button class="popup-btn" onclick="openModal('systool-intern')">
+      Systool Pvt. Ltd. – Digital Forensic Examiner Intern
+    </button>
 
-        <button class="accordion-btn">Aurobindo Hospital - Toxicology Intern (2024)</button>
-        <div class="accordion-content">
-          <ul>
-            <li>Worked on DNA modeling and forensic toxicology analyses.</li>
-            <li>Gained experience in autopsy, firearms analysis, and protein modeling.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <button class="popup-btn" onclick="openModal('systool')">
+      Systool Pvt. Ltd. – Digital Forensic Examiner
+    </button>
+
+    <button class="popup-btn" onclick="openModal('auro')">
+      Aurobindo Hospital – Toxicology Intern
+    </button>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
 
     <!-- Education -->
     <section class="card">
