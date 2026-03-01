@@ -1,38 +1,14 @@
-const modal = document.getElementById("modal");
-const modalBody = document.getElementById("modal-body");
+const accordionBtns = document.querySelectorAll('.accordion-btn');
 
-function openModal(type) {
-  modal.style.display = "flex";
+accordionBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const content = btn.nextElementSibling;
 
-  const content = {
-    etech: `
-      <h3>Etech Global Services</h3>
-      <ul>
-        <li>Fraud prevention and transaction monitoring</li>
-        <li>Account takeover investigations</li>
-        <li>Risk assessment and reporting</li>
-      </ul>
-    `,
-    systool: `
-      <h3>Systool Pvt. Ltd.</h3>
-      <ul>
-        <li>Digital evidence collection and analysis</li>
-        <li>RAM and triage acquisition</li>
-        <li>Incident response support</li>
-      </ul>
-    `,
-    auro: `
-      <h3>Aurobindo Hospital</h3>
-      <ul>
-        <li>Toxicology and DNA modeling exposure</li>
-        <li>Autopsy and firearms observations</li>
-      </ul>
-    `
-  };
-
-  modalBody.innerHTML = content[type] || "<p>No details available.</p>";
-}
-
-function closeModal() {
-  modal.style.display = "none";
-}
+    // Toggle visibility
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+});
