@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kshiprant Sisodiya | Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <header>
@@ -15,37 +16,30 @@
 
 <main>
 
-<section class="card">
-  <h2>Professional Summary</h2>
-  <p>
-    I wanted my resume to be more than a document, so I built it as a website.
-    Clean UI, simple structure, and attention to detail throughout the process.
-  </p>
-</section>
+  <section class="card">
+    <h2>Professional Summary</h2>
+    <p>
+      I wanted my resume to be more than a document, so I built it as a website.
+      Clean UI, simple interactions, and attention to detail throughout the process.
+    </p>
+  </section>
 
-<section class="card">
-  <h2>Professional Experience</h2>
+  <section class="card">
+    <h2>Professional Experience</h2>
 
-  <h3>Etech Global Services – Fraud Prevention Analyst</h3>
-  <ul>
-    <li>Fraud prevention and transaction monitoring</li>
-    <li>Account takeover investigations</li>
-    <li>Risk assessment and reporting</li>
-  </ul>
+    <button class="popup-btn" onclick="openModal('etech')">
+      Etech Global Services – Fraud Prevention Analyst
+    </button>
 
-  <h3>Systool Pvt. Ltd. – Digital Forensic Examiner</h3>
-  <ul>
-    <li>Digital evidence collection and analysis</li>
-    <li>RAM and triage acquisition</li>
-    <li>Incident response support</li>
-  </ul>
+    <button class="popup-btn" onclick="openModal('systool')">
+      Systool Pvt. Ltd. – Digital Forensic Examiner
+    </button>
 
-  <h3>Aurobindo Hospital – Toxicology Intern</h3>
-  <ul>
-    <li>Toxicology and DNA modeling exposure</li>
-    <li>Autopsy and firearms observations</li>
-  </ul>
-</section>
+    <button class="popup-btn" onclick="openModal('auro')">
+      Aurobindo Hospital – Toxicology Intern
+    </button>
+
+  </section>
 
 </main>
 
@@ -53,5 +47,14 @@
   © 2026 Kshiprant Sisodiya
 </footer>
 
+<!-- POPUP MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
