@@ -94,8 +94,8 @@ li {
 }
 
 /* Modal overlay */
+/* Modal overlay */
 .modal {
-  display: none;
   position: fixed;
   inset: 0;
   background: rgba(20, 12, 8, 0.7);
@@ -104,9 +104,18 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* Modal content */
+/* Modal visible state */
+.modal.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Modal box */
 .modal-content {
   background: #fff7f1;
   color: #000000;
