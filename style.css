@@ -55,7 +55,7 @@ header p {
   font-size: 1.3rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--primary);
+  color: #6b3a1e; /* warm brown */
   margin-bottom: 18px;
   border-bottom: 2px solid var(--accent);
   padding-bottom: 6px;
@@ -103,15 +103,18 @@ li {
   inset: 0;
   background: rgba(0,0,0,0.6);
   z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
-  background: var(--secondary);
+  background: var(--primary);
   max-width: 600px;
-  margin: 8% auto;
   padding: 30px;
   border-radius: 6px;
-  color: var(--text-dark);
+  color: #f7ede6; /* light warm text */
 }
 
 .close-btn {
@@ -202,7 +205,6 @@ header p {
   border-radius: 16px;
   padding: 25px;
   max-width: 600px;
-  margin: 8% auto;
   color: #eaeaea;
   box-shadow: 0 0 40px rgba(0,229,255,0.25);
   animation: pop 0.3s ease;
