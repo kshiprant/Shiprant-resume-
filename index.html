@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kshiprant Sisodiya - Resume</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kshiprant Sisodiya | Resume</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Kshiprant Sisodiya</h1>
-    <p>Digital Forensic Examiner & Fraud Prevention Analyst</p>
-    <p>📍 52/B Alkapuri, Ring Road, Ujjain | 📞 9039753076 | ✉️ kshiprant19@gmail.com</p>
-  </header>
 
-  <main>
-    <!-- Professional Summary -->
-    <section class="card">
-      <h2>Professional Summary</h2>
-      <p>Results-driven Digital Forensic Examiner and Fraud Prevention Analyst with expertise in digital forensics, RAM acquisition, triage acquisition, and fraud prevention. Skilled in collaborating with cross-functional teams in high-pressure environments to mitigate risk and safeguard organizational assets.</p>
-    </section>
+<header>
+  <h1>Kshiprant Sisodiya</h1>
+  <p>Digital Forensic Examiner & Fraud Prevention Analyst</p>
+</header>
 
-    <!-- Core Skills -->
-    <section class="card">
-      <h2>Core Skills</h2>
-      <ul>
-        <li>Digital Forensics: RAM Acquisition, Triage Acquisition, OS Forensics, Incident Response</li>
-        <li>Fraud Prevention & Risk Management: Transaction Monitoring, Fraud Detection, Risk Assessment, Account Takeover Prevention, Chargeback & Dispute Handling</li>
-        <li>Tools/Software: UFED, Magnet AXIOM, X-Ways Forensic, FTK, Autopsy, Tableau</li>
-        <li>Analytical & Scientific Skills: Question Document Analysis, Fingerprint Analysis, Instrumental Techniques</li>
-      </ul>
-    </section>
+<main>
 
-    <!-- Experience -->
-<section class="card">
-  <h2>Professional Experience</h2>
+  <section class="card">
+    <h2>Professional Summary</h2>
+    <p>
+      Results-driven professional with experience in digital forensics and fraud
+      prevention. Focused on clarity, structure, and analytical thinking.
+    </p>
+  </section>
 
+  <section class="card">
+    <h2>Professional Experience</h2>
+
+    <button class="popup-btn" onclick="openModal('etech')">
+      Etech Global Services – Fraud Prevention Analyst
+    </button>
+
+    <button class="popup-btn" onclick="openModal('systool')">
+      Systool Pvt. Ltd. – Digital Forensic Examiner
+    </button>
+
+    <button class="popup-btn" onclick="openModal('auro')">
+      Aurobindo Hospital – Toxicology Intern
+    </button>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Kshiprant Sisodiya
+</footer>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
   <div class="experience-list">
     <button class="popup-btn" onclick="openModal('etech')">
       Etech Global Services – Fraud Prevention Analyst
